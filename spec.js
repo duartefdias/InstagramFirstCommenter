@@ -22,10 +22,10 @@ describe('Instagram fast commenter', function() {
   browser.driver.sleep(1000);
   browser.driver.findElement(by.css('[name="username"]')).sendKeys(myUsername);
   browser.driver.findElement(by.css('[name="password"]')).sendKeys(myPassword);
-  browser.driver.findElement(by.css('._5f5mN')).click();
-  browser.driver.sleep(1000);
+  browser.driver.findElement(by.xpath('//*[@id="react-root"]/section/main/div/article/div/div[1]/div/form/div[4]/button')).click();
+  browser.driver.sleep(2000);
   browser.driver.get(targetURL);
-  browser.driver.sleep(1000);
+  browser.driver.sleep(2000);
 
   // Main function that runs in loop
   function instaAutoCommenter(numberOfIterations){
