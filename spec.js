@@ -42,6 +42,7 @@ describe('Instagram fast commenter', function() {
 
         // Convert value of posts on target profile from string to int
         var numberOfPostsInt = numberOfPostsString.replace('.','');
+        numberOfPostsInt.replace(' ','');
         numberOfPostsInt = parseInt(numberOfPostsInt, 10);
 
         if(numberOfPostsInt != numberOfPostsOnTargetProfile){
